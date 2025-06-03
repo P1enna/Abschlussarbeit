@@ -92,17 +92,25 @@ nav {
     
   }
   
-  footer {
+footer {
     position: relative;
     background-color: var(--bg-footer);
     padding: 100px 20px 40px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Keine Zeilenumbrüche */
     justify-content: space-between;
     overflow: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-color);
-  }
+}
+
+.footer-column {
+    flex: 1 1 30%;       /* Jede Spalte ca. 30% Breite */
+    min-width: 250px;    /* Mindestbreite, damit nicht zu schmal */
+    margin: 0 10px;      /* Abstand zwischen den Spalten */
+    box-sizing: border-box;
+    word-break: normal;  /* Kein erzwungener Umbruch im Text */
+}
   
   /* =====================
      Wellenform oben
