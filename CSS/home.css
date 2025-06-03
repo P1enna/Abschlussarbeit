@@ -1,24 +1,28 @@
 .video-container {
-    position: relative;
-  }
+  position: relative;
+}
 
-  .overlay-logo {
-    position: absolute;
-    top: 65%; /* Position Logo, Abstand zu oben */
-    left: 50%;
-    transform: translate(-50%, -50%);
+.overlay-logo {
+  position: absolute;
+  top: 65%; /* Position Logo, Abstand zu oben */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards; /* Einblenden Logo */
+  pointer-events: none;
+}
+
+.overlay-img {
+  width: 700px; /* Grösse Logo */
+  height: auto;
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
     opacity: 0;
-    animation: fadeIn 2s ease-in forwards; /* Einblenden Logo */
-    pointer-events: none;
   }
-
-  .overlay-img {
-    width: 700px; /* Grösse Logo */
-    height: auto;
-    display: block;
+  to {
+    opacity: 1;
   }
-
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
+}
