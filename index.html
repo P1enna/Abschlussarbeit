@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <meta charset="UTF-8" />  <!-- Macht, dass alle Sonderzeichen richtig angezeigt werden -->
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--W3C Framework-->
@@ -23,7 +24,7 @@
 </label>
 
 <nav class="menu">
-  <a href="../index.html">HOME</a>
+  <a href="../index.html" class="active"> HOME</a>
   <a href="../Abschlussarbeit/HTML/photogallery.html">PHOTO GALLERY</a>
   <a href="../Abschlussarbeit/HTML/booking.html">BOOKING</a>
 </nav>
@@ -50,57 +51,70 @@
     Dein Browser unterstützt das Audio-Element nicht.
   </audio>
   
-  <h1>Willkommen beim Schwimmverein Zentralschweiz</h1>
-  <p>Wir bieten ein breites Angebot für alle Schwimmmotivierte der Zentralschweiz. Dabei
-    verfolgen wir hauptsächlich: <br>
-    den Schwimmsport als Breitensport in der Region zu etablieren und die Freude am Wassersport für alle im
-    Trainings- und Kursbereich zu vergrössern.
-    Wir haben professionelle Lehrkräfte welche voll ausgebildet und fortlaufend in speziellen Ausbildungskursen
-    weitergeblidet werden. Damit können wir die Sicherheit unserer Mitglieder garantieren.
+  <h1>Willkommen beim Surfclub Wave – Deine Welle wartet!</h1>
+  <p>
+    Der Surfclub Wave steht für mehr als nur Surfen – wir leben das Meer, die Wellen und den Zusammenhalt.
+    Unser Club an der portugiesischen Küste bietet Kurse für alle Levels, hochwertige Ausrüstung und erfahrene Coaches.
+    Ob du das erste Mal auf dem Brett stehst oder deine Technik verbessern willst – bei uns findest du ideale Bedingungen
+    und eine Gemeinschaft, die das Wasser liebt.
+  </p>
+  <p>
+    Neben dem Sport legen wir Wert auf Umweltbewusstsein, lokale Kultur und das Gefühl von Freiheit.
+    Unser Clubhaus direkt am Strand lädt zum Verweilen ein – mit Blick auf den Sonnenuntergang.
   </p>
    
 
     <main class=w3-container>
     </main>
     
-   <footer>
-  <div class="wave">
-    <svg
-      viewBox="0 0 1440 100"
-      xmlns="http://www.w3.org/2000/svg"
-      preserveAspectRatio="none"
-    >
-      <path
-        fill="#F4F4F4"
-        fill-opacity="0.3"
-        d="M0,80L48,85.3C96,90,192,100,288,90.7C384,81,480,49,576,43.7C672,38,768,60,864,65C960,70,1056,60,1152,65C1248,70,1344,92,1392,102.3L1440,113L1440,0L0,0Z"
-      ></path>
-    </svg>
-  </div>
-
-  
-  <div class="w3-row">
-    <div class="w3-col l6">
-        <div class="footer-section contact-info">
-            <h3>Kontakt</h3>
-             <ul>
-             <li>Telefon: <a href="tel:+351962336295">+351 962 336 295</a></li>
-            <li>E-Mail: <a href="mailto:bookings@penichesurfcamp.com">bookings@penichesurfcamp.com</a></li>
-            </ul>
-         </div>
-    </div>
-  </div>
-
-  <div class="w3-row">
-    <div class="w3-col l6">
-        <div class="footer-section social-icons">
-         <h3>Folge uns</h3>
-         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <footer>
+      <div class="wave">
+        <svg
+          viewBox="0 0 1440 100"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+        >
+          <path
+            fill="#F4F4F4"
+            fill-opacity="0.3"
+            d="M0,80L48,85.3C96,90,192,100,288,90.7C384,81,480,49,576,43.7C672,38,768,60,864,65C960,70,1056,60,1152,65C1248,70,1344,92,1392,102.3L1440,113L1440,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
+     
+      <div class="w3-row w3-center w3-container footer-content">
+        <div class="w3-col l4">
+          <div class="footer-section footer-logo">
+            <h3>Adresse</h3>
+            <p>
+              Avenida do Mar, 162 – Casais do Baleal<br />
+              2520-101 Peniche, Portugal
+            </p>
+            <p>
+              Direkt am Strand, Zimmer mit Gemeinschaftsbad, inkludiert Surfunterricht &amp; Ausrüstung
+            </p>
+          </div>
         </div>
-</footer>
+        <div class="w3-col l4">
+            <div class="footer-section contact-info">
+                <h3>Kontakt</h3>
+                 <ul>
+                 <li>Telefon: <a href="tel:+351962336295">+351 962 336 295</a></li>
+                <li>E-Mail: <a href="mailto:bookings@penichesurfcamp.com">bookings@penichesurfcamp.com</a></li>
+                </ul>
+             </div>
+        </div>
+        <div class="w3-col l4">
+            <div class="footer-section social-icons">
+             <h3>Informationen</h3>
+                <p>
+                  Unser Verein steht für Zusammenhalt, Freude am Sport und Sicherheit.
+                  Wir bieten Trainings für alle Altersgruppen.
+                </p>
+            </div>
+        </div>
+      </div>
+    </footer>
     
 
 <script>
