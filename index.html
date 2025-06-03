@@ -43,6 +43,12 @@
     </div>
 
   </header>
+
+  <audio id="bg-audio" class="audio" controls autoplay>
+    <source src="../Abschlussarbeit/Media/waves_audio.mp3" type="audio/ogg">
+    <source src="../Abschlussarbeit/Media/waves_audio.mp3" type="audio/mpeg">
+    Dein Browser unterstützt das Audio-Element nicht.
+  </audio>
   
   <h1>Willkommen beim Schwimmverein Zentralschweiz</h1>
   <p>Wir bieten ein breites Angebot für alle Schwimmmotivierte der Zentralschweiz. Dabei
@@ -96,6 +102,22 @@
         </div>
 </footer>
     
+
+<script>
+  const audio = document.getElementById("bg-audio"); // Das Audio-Element per ID holen
+
+  window.addEventListener("scroll", () => { //Scroll-Eventlistener
+    
+    const y = window.scrollY; // Ermittlet, wie weit die Seite nach unten gescrollt wird (in Pixel)
+
+    if (y > 500) {  // Wenn mehr als 100px gescrollt wurden, pausiere das Audio
+      audio.pause();
+
+    } else { // Wenn weniger als 100px gescrollt wurden, spiele das Audio weiter
+      audio.play();
+    }
+  });
+</script>
     </body>
     </html>
      

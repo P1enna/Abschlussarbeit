@@ -26,3 +26,13 @@
     opacity: 1;
   }
 }
+
+.audio {
+  position: absolute; /*Löst es aus dem normalen Fluss*/
+  top: 0; /* Grösse */
+  left: 0; /* Positioniert es oben links */
+  width: 0; /* Kein Platzbedarf */
+  height: 0; /* Kein Platzbedarf */
+  opacity: 0; /* Unsichtbar */
+  pointer-events: none; /* Nicht anklickbar */
+}
