@@ -15,57 +15,79 @@
 </head>
 
 <body>
- <!-- Navigation: Hamburger + Menü -->
-<input type="checkbox" id="menu-toggle">
-<label for="menu-toggle" class="menu-icon">
-  <span></span>
-  <span></span>
-  <span></span>
-</label>
+  <!-- Navigation: Hamburger + Menü -->
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
 
-<nav class="menu">
-  <a href="../index.html" class="active"> HOME</a>
-  <a href="../Abschlussarbeit/HTML/photogallery.html">PHOTO GALLERY</a>
-  <a href="../Abschlussarbeit/HTML/booking.html">BOOKING</a>
-</nav>
-  </div>
+  <nav class="menu">
+    <a href="../index.html" class="active"> HOME</a>
+    <a href="../Abschlussarbeit/HTML/photogallery.html">PHOTO GALLERY</a>
+    <a href="../Abschlussarbeit/HTML/booking.html">BOOKING</a>
+  </nav>
 
   <header>
     <div class="video-container">
       <video width="100%" autoplay muted loop playsinline>
-
         <source src="../Abschlussarbeit/Media/video.mp4" type="video/mp4">
       </video>
-    
+  
       <!-- Overlay-Bild -->
       <div class="overlay-logo">
         <img src="../Abschlussarbeit/Media/logo_white.png" alt="Schriftzug" class="overlay-img">
       </div>
     </div>
+  </header>  
 
-  </header>
-
-  <audio id="bg-audio" class="audio" controls autoplay>
-    <source src="../Abschlussarbeit/Media/waves_audio.mp3" type="audio/ogg">
+  <audio controls preload="none">   <!-- Bedienelemente, Verhindert Vorladen der Audiodatei -->
     <source src="../Abschlussarbeit/Media/waves_audio.mp3" type="audio/mpeg">
-    Dein Browser unterstützt das Audio-Element nicht.
+    <source src="../Abschlussarbeit/Media/waves_audio.ogg" type="audio/ogg">   <!-- Alternativ Audiodatei im OGG-Format -->
+    Dein Browser unterstützt das Audio-Element nicht.   <!-- Fallback-Text, falls der Browser das Audio-Element nicht unterstützt -->
   </audio>
-  
-  <h1>Willkommen beim Surfclub Wave – Deine Welle wartet!</h1>
-  <p>
-    Der Surfclub Wave steht für mehr als nur Surfen – wir leben das Meer, die Wellen und den Zusammenhalt.
-    Unser Club an der portugiesischen Küste bietet Kurse für alle Levels, hochwertige Ausrüstung und erfahrene Coaches.
-    Ob du das erste Mal auf dem Brett stehst oder deine Technik verbessern willst – bei uns findest du ideale Bedingungen
-    und eine Gemeinschaft, die das Wasser liebt.
-  </p>
-  <p>
-    Neben dem Sport legen wir Wert auf Umweltbewusstsein, lokale Kultur und das Gefühl von Freiheit.
-    Unser Clubhaus direkt am Strand lädt zum Verweilen ein – mit Blick auf den Sonnenuntergang.
-  </p>
-   
 
-    <main class=w3-container>
-    </main>
+  <main class=w3-container class="main">
+    <h1 class="typewriter">WILLKOMMEN BEIM SURFCLUB WAVE –</h1>
+    <h1 class="typewriter2">DEINE WELLE WARTET!</h1>
+      <div  class="w3-row zwei-spalten">
+        <div class="w3-half links">
+          <p>
+            Der Surfclub Wave steht für mehr als nur Surfen – wir leben das Meer, die Wellen und den Zusammenhalt.
+            Unser Club an der portugiesischen Küste bietet Kurse für alle Levels, hochwertige Ausrüstung und erfahrene Coaches.
+            Ob du das erste Mal auf dem Brett stehst oder deine Technik verbessern willst – bei uns findest du ideale Bedingungen
+            und eine Gemeinschaft, die das Wasser liebt.
+          </p>
+          <p>
+            Neben dem Sport legen wir Wert auf Umweltbewusstsein, lokale Kultur und das Gefühl von Freiheit.
+            Unser Clubhaus direkt am Strand lädt zum Verweilen ein – mit Blick auf den Sonnenuntergang.
+          </p>     
+          
+           <!-- Favicons oben rechts -->
+          <div class="favicons">
+            <img src="../Abschlussarbeit/Media/sonne.png" alt="Telefon" class="favicon">
+            <img src="../Abschlussarbeit/Media/surfbrett.png" alt="E-Mail" class="favicon">
+            <img src="../Abschlussarbeit/Media/teamwork.png" alt="Social Media" class="favicon">
+          </div>
+
+        </div>
+        <div class="w3-half rechts">
+          <img src="../Abschlussarbeit/Media/team2.jpg" alt="Surfclub Bild" class="w3-image" style="max-width:100%;">
+        </div>
+      </div>
+  </div>
+  </main>
+
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps?q=Avenida%20do%20Mar,%20162%20–%20Casais%20do%20Baleal%202520-101%20Peniche,%20Portugal&output=embed"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Google Maps Standort">
+    </iframe>
+  </div>
     
     <footer>
       <div class="wave">
