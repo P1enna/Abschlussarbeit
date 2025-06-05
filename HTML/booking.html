@@ -1,103 +1,220 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8" />  <!-- Macht, dass alle Sonderzeichen richtig angezeigt werden -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Macht, dass alle Sonderzeichen richtig angezeigt werden -->
     <title>Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--W3C Framework-->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <!--Custom CSS-->
-    <link rel="stylesheet" href="../CSS/custom.css">
-    <link rel="stylesheet" href="../CSS/booking.css">
-        <!--Schriftart Googlefonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/custom.css" />
+    <link rel="stylesheet" href="../CSS/booking.css" />
+    <!--Schriftart Googlefonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
+  <body>
+    <!-- Navigation: Hamburger + Menü -->
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
 
-<body>
- <!-- Navigation: Hamburger + Menü -->
-<input type="checkbox" id="menu-toggle">
-<label for="menu-toggle" class="menu-icon">
-  <span></span>
-  <span></span>
-  <span></span>
-</label>
+    <nav class="menu">
+      <a href="../index.html"> HOME</a>
+      <a href="../HTML/photogallery.html">PHOTO GALLERY</a>
+      <a href="../HTML/booking.html" class="active">BOOKING</a>
+    </nav>
 
-<nav class="menu">
-  <a href="../index.html"> HOME</a>
-  <a href="../HTML/photogallery.html">PHOTO GALLERY</a>
-  <a href="../HTML/booking.html" class="active">BOOKING</a>
-</nav>
-  </div>
+    <header>
+      <h1 class="titel">BOOKING</h1>
+      <div class="line-deco-animated"></div>
+      <h2 class="untertitel">
+        Bist du ready, KönigIn der Wellen zu werden? <br />
+        Melde dich jetzt bei diesem Formular an
+      </h2>
 
-    
-    <footer>
-      <div class="wave">
-        <svg
-          viewBox="0 0 1440 100"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
+      <div class="Formular">
+        <div
+          class="w3-container"
+          style="background-color: #f4f4f4; padding: 32px"
         >
-          <path
-            fill="#F4F4F4"
-            fill-opacity="0.3"
-            d="M0,80L48,85.3C96,90,192,100,288,90.7C384,81,480,49,576,43.7C672,38,768,60,864,65C960,70,1056,60,1152,65C1248,70,1344,92,1392,102.3L1440,113L1440,0L0,0Z"
-          ></path>
-        </svg>
-      </div>
-     
-      <div class="w3-row w3-center w3-container footer-content">
-        <div class="w3-col l4">
-          <div class="footer-section footer-logo">
-            <h3>Adresse</h3>
-            <p>
-              Avenida do Mar, 162 – Casais do Baleal<br />
-              2520-101 Peniche, Portugal
-            </p>
-            <p>
-              Direkt am Strand, Zimmer mit Gemeinschaftsbad, inkludiert Surfunterricht &amp; Ausrüstung
-            </p>
-          </div>
-        </div>
-        <div class="w3-col l4">
-            <div class="footer-section contact-info">
-                <h3>Kontakt</h3>
-                 <ul>
-                 <li>Telefon: <a href="tel:+351962336295">+351 962 336 295</a></li>
-                <li>E-Mail: <a href="mailto:bookings@penichesurfcamp.com">bookings@penichesurfcamp.com</a></li>
-                </ul>
-             </div>
-        </div>
-        <div class="w3-col l4">
-            <div class="footer-section social-icons">
-             <h3>Informationen</h3>
-                <p>
-                  Unser Verein steht für Zusammenhalt, Freude am Sport und Sicherheit.
-                  Wir bieten Trainings für alle Altersgruppen.
-                </p>
+          <label class="w3-text" style="color: #2f4156">Name und Vorname</label>
+          <input
+            class="w3-input"
+            style="
+              border: 1px solid #567c8d;
+              background-color: #c8d9e6;
+              border-radius: 6px;
+            "
+            type="text"
+            name="vollerName"
+            autocomplete="name"
+            placeholder="z. B. Sienna Gabriel"
+            required
+          />
+
+          <label class="w3-text" style="color: #2f4156">Geburtsdatum</label>
+          <input
+            class="w3-input"
+            style="
+              border: 1px solid #567c8d;
+              background-color: #c8d9e6;
+              border-radius: 6px;
+            "
+            type="date"
+            name="geburtsdatum"
+            autocomplete="bday"
+            required
+          />
+
+          <label class="w3-text" style="color: #2f4156">E-Mail</label>
+          <input
+            class="w3-input"
+            style="
+              border: 1px solid #567c8d;
+              background-color: #c8d9e6;
+              border-radius: 6px;
+            "
+            type="email"
+            name="email"
+            autocomplete="email"
+            required
+          />
+
+          <label class="w3-text" style="color: #2f4156">Adresse</label>
+          <input
+            class="w3-input"
+            style="
+              border: 1px solid #567c8d;
+              background-color: #c8d9e6;
+              border-radius: 6px;
+            "
+            type="text"
+            name="adresse"
+            autocomplete="street-address"
+            required
+          />
+
+          <label class="w3-text" style="color: #2f4156">PLZ</label>
+          <input
+            class="w3-input"
+            style="
+              border: 1px solid #567c8d;
+              background-color: #c8d9e6;
+              border-radius: 6px;
+            "
+            type="text"
+            name="plz"
+            autocomplete="postal-code"
+            required
+          />
+
+          <label class="w3-text" style="color: #2f4156">Ort</label>
+          <input
+            class="w3-input"
+            style="
+              border: 1px solid #567c8d;
+              background-color: #c8d9e6;
+              border-radius: 6px;
+            "
+            type="text"
+            name="ort"
+            autocomplete="address-level2"
+            required
+          />
+
+          <label class="w3-text" style="color: #2f4156">Nachricht</label>
+          <textarea
+            class="w3-input"
+            style="
+              border: 1px solid #567c8d;
+              background-color: #c8d9e6;
+              border-radius: 6px;
+            "
+            name="nachricht"
+            rows="5"
+            required
+          >/textarea>
+
+          <button
+            class="w3-button w3-hover-opacity"
+            style="
+              background-color: #567c8d;
+              color: #f4f4f4;
+              margin-top: 16px;
+              margin-bottom: 20px;
+              border-radius: 6px;
+            "
+            type="submit"
+          >
+            Absenden
+          </button>
+
+          <footer>
+            <div class="wave">
+              <svg
+                viewBox="0 0 1440 100"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="none"
+              >
+                <path
+                  fill="#F4F4F4"
+                  fill-opacity="0.3"
+                  d="M0,80L48,85.3C96,90,192,100,288,90.7C384,81,480,49,576,43.7C672,38,768,60,864,65C960,70,1056,60,1152,65C1248,70,1344,92,1392,102.3L1440,113L1440,0L0,0Z"
+                ></path>
+              </svg>
             </div>
+
+            <div class="w3-row w3-center w3-container footer-content">
+              <div class="w3-col l4">
+                <div class="footer-section footer-logo">
+                  <h3>Adresse</h3>
+                  <p>
+                    Avenida do Mar, 162 – Casais do Baleal<br />
+                    2520-101 Peniche, Portugal
+                  </p>
+                  <p>
+                    Direkt am Strand, Zimmer mit Gemeinschaftsbad, inkludiert
+                    Surfunterricht &amp; Ausrüstung
+                  </p>
+                </div>
+              </div>
+              <div class="w3-col l4">
+                <div class="footer-section contact-info">
+                  <h3>Kontakt</h3>
+                  <ul>
+                    <li>
+                      Telefon: <a href="tel:+351962336295">+351 962 336 295</a>
+                    </li>
+                    <li>
+                      E-Mail:
+                      <a href="mailto:bookings@penichesurfcamp.com"
+                        >bookings@penichesurfcamp.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="w3-col l4">
+                <div class="footer-section social-icons">
+                  <h3>Informationen</h3>
+                  <p>
+                    Unser Verein steht für Zusammenhalt, Freude am Sport und
+                    Sicherheit. Wir bieten Trainings für alle Altersgruppen.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </footer>
         </div>
       </div>
-    </footer>
-    
-
-<script>
-  const audio = document.getElementById("bg-audio"); // Das Audio-Element per ID holen
-
-  window.addEventListener("scroll", () => { //Scroll-Eventlistener
-    
-    const y = window.scrollY; // Ermittlet, wie weit die Seite nach unten gescrollt wird (in Pixel)
-
-    if (y > 500) {  // Wenn mehr als 100px gescrollt wurden, pausiere das Audio
-      audio.pause();
-
-    } else { // Wenn weniger als 100px gescrollt wurden, spiele das Audio weiter
-      audio.play();
-    }
-  });
-</script>
-    </body>
-    </html>
-     
-</body>
+    </header>
+  </body>
 </html>
