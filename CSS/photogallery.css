@@ -1,0 +1,34 @@
+
+/* Abschnitt 2: unterschiedliche Spaltenbreiten */
+.section-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-wide {
+    width: 50%;
+  }
+  
+  .col-narrow {
+    width: 25%;
+  }
+  
+  /* Responsive Anpassungen */
+  @media (max-width: 600px) {
+    .col-wide, .col-narrow {
+      width: 100% !important;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .section-3 > div {
+      width: 50% !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-3 > div {
+      width: 100% !important;
+    }
+  }
+  
