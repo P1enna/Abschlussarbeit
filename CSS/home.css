@@ -126,3 +126,45 @@
   border: none;
   display: block;
 }
+
+
+
+  /* Responsive Design */
+
+  @media screen and (max-width: 768px) {
+    .overlay-logo {
+      top: 45%; /* weiter nach oben */
+    }
+
+    .overlay-img {
+      width: 400px; /* Bildbreite anpassen, kleiner als 700px */
+    }
+  }
+
+    @media screen and (max-width: 768px) {
+      .video-container {
+        margin-bottom: 15px; /* Weniger Abstand unter dem Video */
+        min-height: auto;    /* Optional: Höhe anpassen, falls nötig */
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+        .links p:first-child {
+        margin-top: 0; /* Text direkt unter der Überschrift */
+      }
+    }
+  
+  @media screen and (max-width: 768px) {
+    .zwei-spalten {
+      flex-direction: column; /* Spalten untereinander anordnen */
+      gap: 30px;              /* Größerer Abstand zwischen den Elementen */
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .map-container {
+      margin: 10px 10px 20px 10px; /* weniger Abstand oben und unten */
+    }
+  }
+  
+  

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8" />  <!-- Macht, dass alle Sonderzeichen richtig angezeigt werden -->
-    <title>Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--W3C Framework-->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!--Custom CSS-->
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/home.css">
-        <!--Schriftart Googlefonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
-   <link rel="icon" href="Media/Favicon.png" type="image/png">
+  <meta charset="UTF-8" /> <!-- Macht, dass alle Sonderzeichen richtig angezeigt werden -->
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- W3C Framework -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/home.css">
+  <!-- Schriftart Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+  <link rel="icon" href="Media/Favicon.png" type="image/png">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
   </label>
 
   <nav class="menu">
-    <a href="../index.html" class="active"> HOME</a>
+    <a href="../index.html" class="active">HOME</a>
     <a href="../Abschlussarbeit/HTML/photogallery.html">PHOTO GALLERY</a>
     <a href="../Abschlussarbeit/HTML/booking.html">BOOKING</a>
   </nav>
@@ -35,58 +35,58 @@
         <source src="../Abschlussarbeit/Media/video.mp4" type="video/mp4">
       </video>
 
-      <div class="overlay-text">
-        Dokumentation_Abschlussarbeit_Gabriel Sienna_Saugy Gina_mma24cL_M287
-        <br>
-         Gina Saugy & Sienna Gabriel
-        <br>
+      <div class="overlay-text"> <!-- Dieser Text steht über dem Video rechts oben in der Ecke -->
+        Dokumentation_Abschlussarbeit_Gabriel Sienna_Saugy Gina_mma24cL_M287<br>
+        Gina Saugy & Sienna Gabriel<br>
         07.06.2025
       </div>
-  
+
       <!-- Overlay-Bild -->
-      <div class="overlay-logo">
+      <div class="overlay-logo"> <!-- Dieses Logo mit transparentem Hintergrund steht über dem Headervideo und wird eingeblendet -->
         <img src="../Abschlussarbeit/Media/logo_white.png" alt="Schriftzug" class="overlay-img">
       </div>
     </div>
-  </header>  
+  </header>
 
-  <audio controls preload="none">   <!-- Bedienelemente, Verhindert Vorladen der Audiodatei -->
+  <!-- Audio-Element -->
+  <audio id="bg-audio" controls preload="none"> <!-- Das Audio kann selbst gesteurt werden (anschalten und pause) -->
     <source src="../Abschlussarbeit/Media/waves_audio.mp3" type="audio/mpeg">
-    <source src="../Abschlussarbeit/Media/waves_audio.ogg" type="audio/ogg">   <!-- Alternativ Audiodatei im OGG-Format -->
-    Dein Browser unterstützt das Audio-Element nicht.   <!-- Fallback-Text, falls der Browser das Audio-Element nicht unterstützt -->
+    <source src="../Abschlussarbeit/Media/waves_audio.ogg" type="audio/ogg"> <!-- Lösunge falls mp3 nicht funktioniert -->
+    Dein Browser unterstützt das Audio-Element nicht. <!-- Dieser Text wird angezeigt wenn dein Browser das Audio nicht abspielen kann -->
   </audio>
 
-  <main class=w3-container class="main">
+  <main class="w3-container main"> <!-- Der Titel wird eingeblendet im Style einer Schreibmaschine -->
     <h1 class="typewriter">WILLKOMMEN BEIM SURFCLUB WAVE –</h1>
     <h1 class="typewriter2">DEINE WELLE WARTET!</h1>
-      <div  class="w3-row zwei-spalten">
-        <div class="w3-half links">
-          <p>
-            Der Surfclub Wave steht für mehr als nur Surfen – wir leben das Meer, die Wellen und den Zusammenhalt.
-            Unser Club an der portugiesischen Küste bietet Kurse für alle Levels, hochwertige Ausrüstung und erfahrene Coaches.
-            Ob du das erste Mal auf dem Brett stehst oder deine Technik verbessern willst – bei uns findest du ideale Bedingungen
-            und eine Gemeinschaft, die das Wasser liebt.
-          </p>
-          <p>
-            Neben dem Sport legen wir Wert auf Umweltbewusstsein, lokale Kultur und das Gefühl von Freiheit.
-            Unser Clubhaus direkt am Strand lädt zum Verweilen ein – mit Blick auf den Sonnenuntergang.
-          </p>     
-          
-           <!-- Favicons oben rechts -->
-          <div class="favicons">
-            <img src="../Abschlussarbeit/Media/sonne.png" alt="Telefon" class="favicon">
-            <img src="../Abschlussarbeit/Media/surfbrett.png" alt="E-Mail" class="favicon">
-            <img src="../Abschlussarbeit/Media/teamwork.png" alt="Social Media" class="favicon">
-          </div>
 
-        </div>
-        <div class="w3-half rechts">
-          <img src="../Abschlussarbeit/Media/team2.jpg" alt="Surfclub Bild" class="w3-image" style="max-width:100%;">
+    <div class="w3-row zwei-spalten"> <!-- Zwei Splaten, links Text mit Icons und rechts das Bild, im mobile stehen sie untereinander -->
+      <div class="w3-half links">
+        <p>
+          Der Surfclub Wave steht für mehr als nur Surfen – wir leben das Meer, die Wellen und den Zusammenhalt.
+          Unser Club an der portugiesischen Küste bietet Kurse für alle Levels, hochwertige Ausrüstung und erfahrene Coaches.
+          Ob du das erste Mal auf dem Brett stehst oder deine Technik verbessern willst – bei uns findest du ideale Bedingungen
+          und eine Gemeinschaft, die das Wasser liebt.
+        </p>
+        <p>
+          Neben dem Sport legen wir Wert auf Umweltbewusstsein, lokale Kultur und das Gefühl von Freiheit.
+          Unser Clubhaus direkt am Strand lädt zum Verweilen ein – mit Blick auf den Sonnenuntergang.
+        </p>
+
+        <!-- Favicons oben rechts -->
+        <div class="favicons">
+          <img src="../Abschlussarbeit/Media/sonne.png" alt="Telefon" class="favicon">
+          <img src="../Abschlussarbeit/Media/surfbrett.png" alt="E-Mail" class="favicon">
+          <img src="../Abschlussarbeit/Media/teamwork.png" alt="Social Media" class="favicon">
         </div>
       </div>
-  </div>
+
+      <div class="w3-half rechts">
+        <img src="../Abschlussarbeit/Media/team2.jpg" alt="Surfclub Bild" class="w3-image" style="max-width:100%;">
+      </div>
+    </div>
   </main>
 
+  <!-- Google Maps -->
   <div class="map-container">
     <iframe
       src="https://www.google.com/maps?q=Avenida%20do%20Mar,%20162%20–%20Casais%20do%20Baleal%202520-101%20Peniche,%20Portugal&output=embed"
@@ -96,74 +96,54 @@
       title="Google Maps Standort">
     </iframe>
   </div>
-    
-    <footer>
-      <div class="wave">
-        <svg
-          viewBox="0 0 1440 100"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-        >
-          <path
-            fill="#F4F4F4"
-            fill-opacity="0.3"
-            d="M0,80L48,85.3C96,90,192,100,288,90.7C384,81,480,49,576,43.7C672,38,768,60,864,65C960,70,1056,60,1152,65C1248,70,1344,92,1392,102.3L1440,113L1440,0L0,0Z"
-          ></path>
-        </svg>
-      </div>
-     
-      <div class="w3-row w3-center w3-container footer-content">
-        <div class="w3-col l4">
-          <div class="footer-section footer-logo">
-            <h3>Adresse</h3>
-            <p>
-              Avenida do Mar, 162 – Casais do Baleal<br />
-              2520-101 Peniche, Portugal
-            </p>
-            <p>
-              Direkt am Strand, Zimmer mit Gemeinschaftsbad, inkludiert Surfunterricht &amp; Ausrüstung
-            </p>
-          </div>
-        </div>
-        <div class="w3-col l4">
-            <div class="footer-section contact-info">
-                <h3>Kontakt</h3>
-                 <ul>
-                 <li>Telefon: <a href="tel:+351962336295">+351 962 336 295</a></li>
-                <li>E-Mail: <a href="mailto:bookings@penichesurfcamp.com">bookings@penichesurfcamp.com</a></li>
-                </ul>
-             </div>
-        </div>
-        <div class="w3-col l4">
-            <div class="footer-section social-icons">
-             <h3>Informationen</h3>
-                <p>
-                  Unser Verein steht für Zusammenhalt, Freude am Sport und Sicherheit.
-                  Wir bieten Trainings für alle Altersgruppen.
-                </p>
-            </div>
+
+  <footer>
+    <div class="wave">
+      <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path
+          fill="#F4F4F4"
+          fill-opacity="0.3"
+          d="M0,80L48,85.3C96,90,192,100,288,90.7C384,81,480,49,576,43.7C672,38,768,60,864,65C960,70,1056,60,1152,65C1248,70,1344,92,1392,102.3L1440,113L1440,0L0,0Z">
+        </path>
+      </svg>
+    </div>
+
+    <div class="w3-row w3-center w3-container footer-content">
+      <div class="w3-col l4">
+        <div class="footer-section footer-logo">
+          <h3>Adresse</h3>
+          <p>
+            Avenida do Mar, 162 – Casais do Baleal<br />
+            2520-101 Peniche, Portugal
+          </p>
+          <p>
+            Direkt am Strand, Zimmer mit Gemeinschaftsbad, inkludiert Surfunterricht &amp; Ausrüstung
+          </p>
         </div>
       </div>
-    </footer>
-    
 
-<script>
-  const audio = document.getElementById("bg-audio"); // Das Audio-Element per ID holen
+      <div class="w3-col l4">
+        <div class="footer-section contact-info">
+          <h3>Kontakt</h3>
+          <ul>
+            <li>Telefon: <a href="tel:+351962336295">+351 962 336 295</a></li>
+            <li>E-Mail: <a href="mailto:bookings@penichesurfcamp.com">bookings@penichesurfcamp.com</a></li>
+          </ul>
+        </div>
+      </div>
 
-  window.addEventListener("scroll", () => { //Scroll-Eventlistener
-    
-    const y = window.scrollY; // Ermittlet, wie weit die Seite nach unten gescrollt wird (in Pixel)
+      <div class="w3-col l4">
+        <div class="footer-section social-icons">
+          <h3>Informationen</h3>
+          <p>
+            Unser Verein steht für Zusammenhalt, Freude am Sport und Sicherheit.
+            Wir bieten Trainings für alle Altersgruppen.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    if (y > 500) {  // Wenn mehr als 100px gescrollt wurden, pausiere das Audio
-      audio.pause();
-
-    } else { // Wenn weniger als 100px gescrollt wurden, spiele das Audio weiter
-      audio.play();
-    }
-  });
-</script>
-    </body>
-    </html>
-     
+  </script>
 </body>
 </html>
