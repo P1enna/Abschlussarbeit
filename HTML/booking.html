@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
+    <!-- Meta-Informationen und Verlinkungen -->
     <meta charset="UTF-8" />
     <title>Booking</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- W3.CSS Framework für Layout & Responsivität -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <!-- Eigene CSS-Dateien -->
     <link rel="stylesheet" href="../CSS/custom.css" />
     <link rel="stylesheet" href="../CSS/booking.css" />
+
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap"
       rel="stylesheet"
     />
+
+    <!-- favicon -->
     <link rel="icon" href="../Media/Favicon.png" type="image/png" />
   </head>
 
   <body>
-    <!-- Navigation: Hamburger + Menü -->
+    <!-- Hamburger-Menü für Navigation (mobil) -->
     <input type="checkbox" id="menu-toggle" />
     <label for="menu-toggle" class="menu-icon">
       <span></span>
@@ -23,22 +32,25 @@
       <span></span>
     </label>
 
+    <!-- Hauptnavigation -->
     <nav class="menu">
       <a href="../index.html"> HOME</a>
       <a href="../HTML/photogallery.html">PHOTO GALLERY</a>
       <a href="../HTML/booking.html" class="active">BOOKING</a>
     </nav>
 
+    <!-- header (Titel, linie, untertitel) -->
     <header>
-      <h1 class="titel">BOOKING</h1>
-      <div class="line-deco-animated"></div>
-      <h2 class="untertitel">
+      <h1 class="title">BOOKING</h1>
+      <div class="line-animated"></div>
+      <h2 class="undertitle">
         Bist du ready, KönigIn der Wellen zu werden? <br />
         Melde dich jetzt bei diesem Formular an
       </h2>
 
-      <!-- Formular -->
+      <!-- buchungsformular -->
       <form class="modern-form" onsubmit="return validateForm(event)">
+        <!-- name-feld  -->
         <div class="form-field">
           <label for="fullname">Name und Vorname</label>
           <input
@@ -51,6 +63,7 @@
           />
         </div>
 
+        <!-- geburtsdatum-feld -->
         <div class="form-field">
           <label for="geburtsdatum">Geburtsdatum</label>
           <input
@@ -62,6 +75,7 @@
           />
         </div>
 
+        <!-- e-mail-feld -->
         <div class="form-field">
           <label for="email">E-Mail</label>
           <input
@@ -73,6 +87,7 @@
           />
         </div>
 
+        <!-- adresse-feld -->
         <div class="form-field">
           <label for="adresse">Adresse</label>
           <input
@@ -84,6 +99,7 @@
           />
         </div>
 
+        <!-- plz,ort-feld -->
         <div class="w3-row-padding">
           <div class="w3-col s12 m6">
             <label for="plz">PLZ</label>
@@ -107,6 +123,7 @@
           </div>
         </div>
 
+        <!-- nachricht-feld -->
         <div class="form-field">
           <label for="nachricht">Nachricht</label>
           <textarea
@@ -117,18 +134,20 @@
           ></textarea>
         </div>
 
+        <!-- button -->
         <div class="form-button">
           <button class="w3-button w3-teal" type="submit">Absenden</button>
         </div>
       </form>
 
-      <!-- Modal -->
+      <!-- bestätigung modalfenster -->
       <div id="modal1" class="w3-modal">
         <div
           class="w3-modal-content w3-card-4 w3-animate-top"
           style="max-width: 400px"
         >
           <header class="w3-container w3-teal">
+            <!-- schliessen button -->
             <span
               onclick="document.getElementById('modal1').style.display='none'"
               class="w3-button w3-display-topright"
@@ -145,19 +164,21 @@
         </div>
       </div>
 
+      <!-- Formularvalidierung (HTML5 + Modal-Logik) -->
       <script>
         function validateForm(event) {
           const form = document.querySelector(".modern-form");
           if (form.checkValidity()) {
-            event.preventDefault();
-            document.getElementById("modal1").style.display = "block";
+            event.preventDefault(); // verhindert echtes Absenden
+            document.getElementById("modal1").style.display = "block"; // zeigt Modal
             return false;
           }
         }
       </script>
 
-      <!-- Footer -->
+      <!-- footer mit 3 spalten -->
       <footer>
+        <!-- deko-welle -->
         <div class="wave">
           <svg
             viewBox="0 0 1440 100"
@@ -172,7 +193,9 @@
           </svg>
         </div>
 
+        <!-- footer-inhalte -->
         <div class="w3-row w3-center w3-container footer-content">
+          <!-- adresse -->
           <div class="w3-col l4">
             <div class="footer-section footer-logo">
               <h3>Adresse</h3>
@@ -186,6 +209,8 @@
               </p>
             </div>
           </div>
+
+          <!-- kontakt -->
           <div class="w3-col l4">
             <div class="footer-section contact-info">
               <h3>Kontakt</h3>
@@ -202,6 +227,8 @@
               </ul>
             </div>
           </div>
+
+          <!-- informationen -->
           <div class="w3-col l4">
             <div class="footer-section social-icons">
               <h3>Informationen</h3>
