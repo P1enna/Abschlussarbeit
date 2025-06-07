@@ -1,170 +1,188 @@
-.video-container {
-  position: relative;
-  margin-bottom: 40px;
-  /* Set a specific height */
-  min-height: 500px;
-}
+/* ========================================
+   Video-Bereich
+   ======================================== */
 
-.overlay-text {
-  position: absolute;
-  top: 10px; /* Abstand von oben */
-  right: 10px; /* Abstand von links */
-  color: white;
-  font-size: small;
-  padding: 8px 12px;
-  border-radius: 5px;
-  z-index: 5; /* über Video */
-  max-width: 800px; /* optional, damit der Text nicht zu breit wird */
-  text-align: right; /* Text rechtsbündig */
-}
-
-.overlay-logo {
-  position: absolute;
-  top: 65%; /* Position Logo, Abstand zu oben */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  animation: fadeIn 2s ease-in forwards; /* Einblenden Logo */
-  pointer-events: none;
-}
-
-.overlay-img {
-  width: 700px; /* Grösse Logo */
-  height: auto;
-  display: block;
-}
-
-@keyframes fadeIn {
-  from {
+   .video-container {
+    position: relative;
+    margin-bottom: 40px;
+    min-height: 500px;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 10px; /* Abstand von oben */
+    right: 10px; /* Abstand von links */
+    color: white;
+    font-size: small;
+    padding: 8px 12px;
+    border-radius: 5px;
+    z-index: 5; /* über Video */
+    max-width: 800px; /* optional, damit der Text nicht zu breit wird */
+    text-align: right; /* Text rechtsbündig */
+  }
+  
+  .overlay-logo {
+    position: absolute;
+    top: 65%; /* Position Logo, Abstand zu oben */
+    left: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0;
+    animation: fadeIn 2s ease-in forwards; /* Einblenden Logo */
+    pointer-events: none;
   }
-  to {
-    opacity: 1;
+  
+  .overlay-img {
+    width: 700px; /* Grösse Logo */
+    height: auto;
+    display: block;
   }
-}
-
-.favicons {
-  margin-top: 55px;
-  display: flex;
-  gap: 40px;
-  justify-content: center; /* Zentriert die Icons horizontal */
-}
-
-.favicon {
-  width: 100px;
-  height: 100px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.favicon:hover {
-  transform: scale(1.1);
-}
-
-.typewriter,
-.typewriter2 {
-  overflow: hidden;
-  white-space: nowrap;
-  width: 0;
-  animation: typing 4s steps(40) forwards;
-
-  /* Zentrierung */
-  margin: 0 auto; /* horizontal mittig */
-  text-align: center; /* Textinhalt zentrieren */
-}
-
-.typewriter {
-  animation-delay: 2s; /* Start erst nach 2 Sekunden */
-}
-
-.typewriter2 {
-  animation-delay: 4.5s; /* Start erst nach 4.5 Sekunden */
-}
-
-@keyframes typing {
-  to {
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* ========================================
+     Favicons
+     ======================================== */
+  
+  .favicons {
+    margin-top: 55px;
+    display: flex;
+    gap: 40px;
+    justify-content: center; /* Zentriert die Icons horizontal */
+  }
+  
+  .favicon {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .favicon:hover {
+    transform: scale(1.1);
+  }
+  
+  /* ========================================
+     Typewriter-Effekt
+     ======================================== */
+  
+  .typewriter,
+  .typewriter2 {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 4s steps(40) forwards;
+  
+    /* Zentrierung */
+    margin: 0 auto; /* horizontal mittig */
+    text-align: center; /* Textinhalt zentrieren */
+  }
+  
+  .typewriter {
+    animation-delay: 2s; /* Start erst nach 2 Sekunden */
+  }
+  
+  .typewriter2 {
+    animation-delay: 4.5s; /* Start erst nach 4.5 Sekunden */
+  }
+  
+  @keyframes typing {
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* ========================================
+     Zwei-Spalten-Layout
+     ======================================== */
+  
+  .zwei-spalten {
+    display: flex; /* Flexbox aktiviert zwei Spalten nebeneinander */
+    gap: 20px; /* Abstand zwischen Text- und Bild-Spalte */
+    align-items: flex-start; /* Text und Bild oben bündig ausrichten */
+    margin-top: 40px;
+  }
+  
+  .links {
+    text-align: justify; /* Macht Blocksatz */
+  }
+  
+  .links,
+  .rechts {
+    flex: 1; /* Beide Spalten je 50% Breite */
+    box-sizing: border-box; /* Padding & Border zählen zur Breite */
+  }
+  
+  .rechts img {
+    max-width: 100%; /* Bild passt sich der Spaltenbreite an */
+    height: auto; /* Proportionale Höhe automatisch */
+    display: block; /* Kein Abstand unter dem Bild */
+    border-radius: 7px; /* Ecken abrunden */
+  }
+  
+  /* ========================================
+     Google Maps
+     ======================================== */
+  
+  .map-container {
+    width: auto;
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 80px 20px 80px 20px; /* Abstand nach oben und unten, zentriert */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Schatteneffekt */
+  }
+  
+  .map-container iframe {
     width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
   }
-}
-
-.zwei-spalten {
-  display: flex; /* Flexbox aktiviert zwei Spalten nebeneinander */
-  gap: 20px; /* Abstand zwischen Text- und Bild-Spalte */
-  align-items: flex-start; /* Text und Bild oben bündig ausrichten */
-  margin-top: 40px;
-}
-
-.links {
-  text-align: justify; /*Macht Blocksatz*/
-}
-
-.links,
-.rechts {
-  flex: 1; /* Beide Spalten je 50% Breite */
-  box-sizing: border-box; /* Padding & Border zählen zur Breite */
-}
-
-.rechts img {
-  max-width: 100%; /* Bild passt sich der Spaltenbreite an */
-  height: auto; /* Proportionale Höhe automatisch */
-  display: block; /* Kein Abstand unter dem Bild */
-  border-radius: 7px; /* Ecken abrunden */
-}
-
-.map-container {
-  width: auto;
-  height: 400px;
-  border-radius: 8px;
-  overflow: hidden;
-  margin: 80px 20px 80px 20px; /* Abstand nach oben und unten, zentriert */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.map-container iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-  display: block;
-}
-
-
-
-  /* Responsive Design */
-
+  
+  /* ========================================
+     Responsive Design (max-width: 768px)
+     ======================================== */
+  
   @media screen and (max-width: 768px) {
     .overlay-logo {
       top: 45%; /* weiter nach oben */
     }
-
+  
     .overlay-img {
       width: 400px; /* Bildbreite anpassen, kleiner als 700px */
     }
   }
-
-    @media screen and (max-width: 768px) {
-      .video-container {
-        margin-bottom: 15px; /* Weniger Abstand unter dem Video */
-        min-height: auto;    /* Optional: Höhe anpassen, falls nötig */
-      }
+  
+  @media screen and (max-width: 768px) {
+    .video-container {
+      margin-bottom: 15px; /* Weniger Abstand unter dem Video */
+      min-height: auto;    /* Optional: Höhe anpassen, falls nötig */
     }
-
-    @media screen and (max-width: 768px) {
-        .links p:first-child {
-        margin-top: 0; /* Text direkt unter der Überschrift */
-      }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .links p:first-child {
+      margin-top: 0; /* Text direkt unter der Überschrift */
     }
+  }
   
   @media screen and (max-width: 768px) {
     .zwei-spalten {
       flex-direction: column; /* Spalten untereinander anordnen */
-      gap: 30px;              /* Größerer Abstand zwischen den Elementen */
+      gap: 30px;              /* Grösserer Abstand zwischen den Elementen */
     }
   }
-
+  
   @media screen and (max-width: 768px) {
     .map-container {
       margin: 10px 10px 20px 10px; /* weniger Abstand oben und unten */
     }
   }
-  
   
